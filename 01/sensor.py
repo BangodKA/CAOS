@@ -8,6 +8,8 @@ import time
 # Если обработчик не ставить, Python для SIGINT ведет себя иначе
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
+print("Enter sensor name")
+
 # читаем любую строку; используется просто для отображения
 sensor_name = sys.stdin.readline().strip()
 if not sensor_name:
